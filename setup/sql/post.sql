@@ -1,0 +1,7 @@
+CREATE TABLE public.post (
+	type CHARACTER VARYING(31) NOT NULL,
+	id INTEGER PRIMARY KEY NOT NULL DEFAULT nextval('post_id_seq'::regclass),
+	name CHARACTER VARYING(255),
+	category CHARACTER VARYING(255)
+);
+ALTER TABLE post OWNER TO postgres;
